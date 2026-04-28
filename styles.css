@@ -85,6 +85,9 @@ a:focus-visible {
 }
 
 .logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 1.125rem;
   font-weight: 700;
   color: #ffffff;
@@ -98,111 +101,29 @@ a:focus-visible {
   text-decoration: underline;
 }
 
-/* Desktop nav */
-#primary-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1.5rem;
-}
-
-#primary-nav a {
-  color: #ffffffcc;
-  font-size: 0.9rem;
-  font-weight: 500;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  transition: color var(--transition);
-}
-
-#primary-nav a:hover,
-#primary-nav a:focus-visible {
+.logo-icon {
+  height: 26px;
+  width: auto;
   color: #ffffff;
-  text-decoration: none;
-}
-
-/* Hamburger button — hidden on desktop */
-.nav-toggle {
-  display: none;
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0.4rem;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
-  display: block;
-  width: 22px;
-  height: 2px;
-  background: #ffffff;
-  transition: transform var(--transition), opacity var(--transition);
-}
-
-.hamburger {
-  position: relative;
-}
-
-.hamburger::before,
-.hamburger::after {
-  content: "";
-  position: absolute;
-  left: 0;
-}
-
-.hamburger::before { top: -7px; }
-.hamburger::after  { top:  7px; }
-
-/* Mobile nav */
-@media (max-width: 600px) {
-  .nav-toggle {
-    display: block;
-  }
-
-  #primary-nav {
-    display: none;
-    position: absolute;
-    top: 3.5rem;
-    left: 0;
-    right: 0;
-    background: var(--color-primary);
-    padding: 1rem var(--container-pad) 1.5rem;
-    box-shadow: 0 4px 8px rgba(0,0,0,.2);
-  }
-
-  #primary-nav.open {
-    display: block;
-  }
-
-  #primary-nav ul {
-    flex-direction: column;
-    gap: 1rem;
-  }
-
-  #primary-nav a {
-    font-size: 1rem;
-  }
-
-  /* Animate hamburger → X */
-  .nav-toggle[aria-expanded="true"] .hamburger {
-    background: transparent;
-  }
-
-  .nav-toggle[aria-expanded="true"] .hamburger::before {
-    transform: translateY(7px) rotate(45deg);
-  }
-
-  .nav-toggle[aria-expanded="true"] .hamburger::after {
-    transform: translateY(-7px) rotate(-45deg);
-  }
+  flex-shrink: 0;
 }
 
 /* ----- Hero ----- */
 .hero {
-  background: linear-gradient(135deg, var(--color-primary) 0%, #2d5986 100%);
+  background:
+    linear-gradient(rgba(15, 30, 50, 0.55), rgba(15, 30, 50, 0.68)),
+    url('https://massiftech.llc/wp-content/uploads/2024/11/PXL_20241011_124157097-2048x1542.jpg') center/cover no-repeat;
   color: #ffffff;
   padding: 5rem var(--container-pad) 4.5rem;
   text-align: center;
+}
+
+.hero-logo-icon {
+  height: 64px;
+  width: auto;
+  color: #ffffff;
+  margin-bottom: 1.25rem;
+  opacity: 0.92;
 }
 
 .hero h1 {
