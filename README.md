@@ -47,6 +47,8 @@ To serve `www.massiftech.llc` as well, add a CNAME record:
 |---|---|---|---|
 | CNAME | `www` | `massif-tech.github.io` | 600 |
 
+> **Note:** `massif-tech.github.io` is the GitHub Pages domain for the `massif-tech` organization. Substitute your actual organization or username if different.
+
 > **Canonical host recommendation:** Pick one canonical URL (`https://massiftech.llc` or `https://www.massiftech.llc`) and redirect the other. The simplest approach for a GitHub Pages apex site is to keep `massiftech.llc` as the canonical and let the optional `www` CNAME point there too. You can enforce this with a redirect rule or by relying on GitHub's built-in redirect when both point to the same Pages site.
 
 ---
