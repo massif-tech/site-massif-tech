@@ -112,7 +112,7 @@ a:focus-visible {
 .hero {
   background:
     linear-gradient(rgba(15, 30, 50, 0.55), rgba(15, 30, 50, 0.68)),
-    url('https://massiftech.llc/wp-content/uploads/2024/11/PXL_20241011_124157097-2048x1542.jpg') center/cover no-repeat;
+    url('static/cotagne.jpg') center/cover no-repeat;
   color: #ffffff;
   padding: 5rem var(--container-pad) 4.5rem;
   text-align: center;
