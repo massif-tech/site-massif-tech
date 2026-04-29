@@ -19,30 +19,11 @@
 </head>
 <body>
 
-  <!-- SVG symbol definitions (hidden) -->
-  <svg xmlns="http://www.w3.org/2000/svg" hidden aria-hidden="true">
-    <symbol id="icon-massif" viewBox="0 0 48 36" fill="none">
-      <!-- Mountain ridge with PCB-trace aesthetic -->
-      <polyline points="2,34 13,9 21,20 31,3 46,34"
-        stroke="currentColor" stroke-width="2.5"
-        stroke-linejoin="miter" stroke-linecap="square"/>
-      <!-- Base trace -->
-      <line x1="2" y1="34" x2="46" y2="34" stroke="currentColor" stroke-width="1.5"/>
-      <!-- SMD component marker at main peak -->
-      <rect x="28" y="0" width="6" height="6" rx="0.5"
-        stroke="currentColor" stroke-width="1.5" fill="none"/>
-      <!-- Via / node dots at junctions -->
-      <circle cx="13" cy="9" r="2" fill="currentColor"/>
-      <circle cx="21" cy="20" r="1.5" fill="currentColor"/>
-    </symbol>
-  </svg>
-
   <!-- ===== Navigation ===== -->
   <header class="site-header">
     <div class="container header-inner">
       <a href="#hero" class="logo" aria-label="Massif Tech — home">
-        <svg class="logo-icon" aria-hidden="true"><use href="#icon-massif"/></svg>
-        Massif Tech
+        <img src="static/massif_logo.sml.png">
       </a>
     </div>
   </header>
@@ -51,7 +32,6 @@
     <!-- ===== Hero ===== -->
     <section id="hero" class="hero" aria-labelledby="hero-heading">
       <div class="container">
-        <svg class="hero-logo-icon" aria-hidden="true"><use href="#icon-massif"/></svg>
         <h1 id="hero-heading">Massif Tech</h1>
         <p class="hero-tagline">
           Massif Tech designs hardware and software solutions to validate engineering design and manufacturing.
